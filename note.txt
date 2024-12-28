@@ -1,0 +1,60 @@
+Starting Laravel Project
+
+- Create GitHub Repo 
+- Create laravel project in htdocs 
+    - composer create-project laravel/laravel project-name 
+- Local laravel project link to GitHub Repo 
+    - git init 
+    - git remote add origin (clone url )
+    - git status 
+    - git add .
+    - git commit -m "startin project"
+    - git push -u origin main or master 
+- Install laravel ui 
+    - composer require laravel/ui 
+- Install ui bootstrap 
+    - php artisan ui bootstrap --auth 
+- npm install 
+- npm run build 
+
+- php artisan make:controller ControllerName --resource 
+
+- php artisan make:model ModelName -m 
+
+- php artisan migrate
+- php artisan migrate:fresh (danger - project အစမှာပဲသုံး )
+
+Faker  and Factory
+
+- php artisan make:factory FactoryName
+
+- php artisan db:seed
+
+- csrf - Cross-Site Request Forgery
+
+- JOIN 
+
+- One To One, One to Many, Many to Many စတဲ့ပုံစံအမျိုးမျိုးရှိ 
+
+- Laravel မျာ Relationship ၂ ခုမှတ်ကိုမှတ်ရမယ် 
+
+- hasMany() နဲ့ belongsTo()
+
+- Blog မှာ posts နဲ့ categories က Relationship ရှိတယ် 
+
+- post တစ်ခုမှာ ဆိုရင် category တစ်ခုရှိကိုရှိရတယ်။ 
+    - posts belongs to categories
+-categories မှာ posts တွေအများကြီးရှိနိုင်တယ် 
+    - categories has many posts
+
+Items 
+    - items belongs to categories
+    - categories has many items 
+
+Order 
+    - order belongs to payments 
+    - payments has many orders 
+    - order belongs to items 
+    - items has many order 
+    - order belongs to users 
+    - users has many order
